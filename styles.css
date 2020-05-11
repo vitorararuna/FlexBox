@@ -5,33 +5,26 @@ html, body, #app{
 
 
 #app{
-  /* Primeira coisa é colcoar um display felx ao redor dos elms que estiver por fora dos elms que queremos trabalhar  */
-  
-  display: flex; 
-  /* Obs1.: A partir de agora ele vai alinhar os elms na horizontal*/
+  display: flex;
 
-  flex-direction: row;
-  /* "row" Direção dos itens filhos do app vão sempre seguir na mesma linha*/
-  /* "column" Direção dos itens filhos do app vão sempre seguir na mesma coluna*/
+  /*Agora vamos ver 3 propriedades que vai permitir a gente controlar se um componente deve ser expremido ou até aumentado para caber no espaço do container dele */
 
-  align-items: center;
-  /* Caso "row" o align-items vai alinhar verticalmente */
-  /* Caso "column" o align-items vai alinhar horizontalmente */
-  
-  justify-content: center;
-  /* Caso "row" o justify-content vai alinhar horizontalmente */
-  /* Caso "column" o align-items vai alinhar verticalmente */
-
-  /* Tem algumas propriedades especiais: 
-      * space-betwenn: espaço igual entre todos os itens 
-      * space-arround: espaço igual entre todos os itens + espaço no começo e no fim 
-    */
 
 }
 
 .box{
-  width: 60px;
+  width: 100px;
   height: 60px;
   background: #f00;
   margin: 5px;
+
+  /* flex-grow: 1; */
+  /* Com o flex-grow, os nossos componentes vão ter a capacidade de ser aumentado para caber no container (elm pai): ocupar toda a largura disponível*/
+
+  /* flex-shrink: 1; */
+  /* Já com o flex-shrink, os nossos componentes vão ter a capacidade de se expremer para caber no cantainer */
+
+  flex: 1 0;
+  /*O flex é a soma das 2 propriedades acima*/
+  /* nesse caso a gente quer que ele aumente se necessário, porém não se exprema*/
 }
