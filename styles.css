@@ -1,0 +1,24 @@
+html, body, #app{
+  height: 100%;
+  margin: 0;
+}
+
+
+#app{
+  /* Primeira coisa é colcoar um display felx ao redor dos elms que estiver por fora dos elms que queremos trabalhar  */
+  
+  display: flex; 
+  /* Obs1.: A partir de agora ele vai alinhar os elms na horizontal*/
+
+  flex-direction: row;
+  /* "row" Direção dos itens filhos do app vão sempre seguir na mesma linha*/
+  /* "column" Direção dos itens filhos do app vão sempre seguir na mesma coluna*/
+
+}
+
+.box{
+  width: 60px;
+  height: 60px;
+  background: #f00;
+  margin: 5px;
+}
