@@ -7,24 +7,20 @@ html, body, #app{
 #app{
   display: flex;
 
-  /*Agora vamos ver 3 propriedades que vai permitir a gente controlar se um componente deve ser expremido ou até aumentado para caber no espaço do container dele */
+  /* Quebra de Linhas dentro do flexbox*/
 
+  flex-wrap: wrap; /*Vai quebrar a linha */
+  align-items: center; /* vertical (pois é row)*/
+  justify-content: space-between; /*horizontal (pois é row)*/
+
+  align-content: center;
+  /*O align-content alinha os elms quando eles estão em mais de uma linha*/
 
 }
 
 .box{
-  width: 100px;
+  width: 200px;
   height: 60px;
   background: #f00;
   margin: 5px;
-
-  /* flex-grow: 1; */
-  /* Com o flex-grow, os nossos componentes vão ter a capacidade de ser aumentado para caber no container (elm pai): ocupar toda a largura disponível*/
-
-  /* flex-shrink: 1; */
-  /* Já com o flex-shrink, os nossos componentes vão ter a capacidade de se expremer para caber no cantainer */
-
-  flex: 1 0;
-  /*O flex é a soma das 2 propriedades acima*/
-  /* nesse caso a gente quer que ele aumente se necessário, porém não se exprema*/
 }
