@@ -7,15 +7,6 @@ html, body, #app{
 #app{
   display: flex;
 
-  /* Quebra de Linhas dentro do flexbox*/
-
-  flex-wrap: wrap; /*Vai quebrar a linha */
-  align-items: center; /* vertical (pois é row)*/
-  justify-content: space-between; /*horizontal (pois é row)*/
-
-  align-content: center;
-  /*O align-content alinha os elms quando eles estão em mais de uma linha*/
-
 }
 
 .box{
@@ -23,4 +14,17 @@ html, body, #app{
   height: 60px;
   background: #f00;
   margin: 5px;
+}
+
+
+.red{
+  order: 1;
+}
+.green{
+  background: #0f0;
+  order: 2;
+}
+.blue{
+  background: #00f;
+  order: 0;
 }
