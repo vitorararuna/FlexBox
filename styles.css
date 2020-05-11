@@ -14,6 +14,19 @@ html, body, #app{
   /* "row" Direção dos itens filhos do app vão sempre seguir na mesma linha*/
   /* "column" Direção dos itens filhos do app vão sempre seguir na mesma coluna*/
 
+  align-items: center;
+  /* Caso "row" o align-items vai alinhar verticalmente */
+  /* Caso "column" o align-items vai alinhar horizontalmente */
+  
+  justify-content: center;
+  /* Caso "row" o justify-content vai alinhar horizontalmente */
+  /* Caso "column" o align-items vai alinhar verticalmente */
+
+  /* Tem algumas propriedades especiais: 
+      * space-betwenn: espaço igual entre todos os itens 
+      * space-arround: espaço igual entre todos os itens + espaço no começo e no fim 
+    */
+
 }
 
 .box{
